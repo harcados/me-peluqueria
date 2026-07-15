@@ -1,0 +1,451 @@
+:root{
+
+    --rosa:#E9BABC;
+    --negro:#090909;
+    --blanco:#ffffff;
+    --gris:#d6d6d6;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--negro);
+
+    color:white;
+
+    font-family:'Montserrat',sans-serif;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 15px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    border:3px solid var(--rosa);
+
+    border-radius:35px;
+
+    padding:35px 25px;
+
+    background:#050505;
+
+    box-shadow:0 0 35px rgba(233,186,188,.08);
+
+}
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+.logo img{
+
+    width:170px;
+
+    border-radius:50%;
+
+}
+
+.titulo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+}
+
+.titulo i{
+
+    font-size:35px;
+
+}
+
+.titulo h1{
+
+    font-size:36px;
+
+    font-weight:800;
+
+    text-align:center;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#cfcfcf;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.card{
+
+    border:2px solid white;
+
+    border-radius:28px;
+
+    padding:35px 25px;
+
+}
+
+.section{
+
+    text-align:center;
+
+}
+
+.section i{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.label{
+
+    display:block;
+
+    letter-spacing:4px;
+
+    font-size:15px;
+
+    color:#d9d9d9;
+
+    margin-bottom:12px;
+
+}
+
+.section h2{
+
+    font-size:36px;
+
+    font-weight:600;
+
+}
+
+.section h3{
+
+    font-size:60px;
+
+    margin:20px 0;
+
+    font-weight:800;
+
+}
+
+.section h4{
+
+    font-size:34px;
+
+    margin:20px 0;
+
+    word-break:break-all;
+
+    font-weight:700;
+
+}
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#666;
+
+    margin:35px 0;
+
+}
+
+.copy{
+
+    margin-top:10px;
+
+    width:100%;
+
+    height:65px;
+
+    border-radius:18px;
+
+    border:2px solid white;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.copy:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+.copy:active{
+
+    transform:scale(.97);
+
+}
+
+.toast{
+
+    margin-top:18px;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#46d36a;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+.toast.show{
+
+    display:flex;
+
+    animation:fade .25s ease;
+
+}
+
+.info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:35px;
+
+    margin-bottom:30px;
+
+}
+
+.info i{
+
+    font-size:42px;
+
+}
+
+.info p{
+
+    color:#d9d9d9;
+
+    font-size:20px;
+
+    line-height:1.5;
+
+}
+
+.whatsapp{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    width:100%;
+
+    height:82px;
+
+    border-radius:50px;
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    transition:.25s;
+
+}
+
+.whatsapp:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+.footer{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+.footer div{
+
+    text-align:center;
+
+}
+
+.footer i{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.footer span{
+
+    display:block;
+
+    font-size:14px;
+
+    color:#ddd;
+
+    line-height:1.4;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+.logo img{
+
+width:140px;
+
+}
+
+.titulo h1{
+
+font-size:28px;
+
+}
+
+.subtitulo{
+
+font-size:18px;
+
+}
+
+.section h2{
+
+font-size:28px;
+
+}
+
+.section h3{
+
+font-size:44px;
+
+}
+
+.section h4{
+
+font-size:24px;
+
+}
+
+.copy{
+
+font-size:20px;
+
+height:58px;
+
+}
+
+.whatsapp{
+
+font-size:22px;
+
+height:72px;
+
+}
+
+.info p{
+
+font-size:17px;
+
+}
+
+.footer{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
